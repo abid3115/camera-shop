@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500&family=Lato:ital,wght@1,700&family=Open+Sans:ital,wght@0,800;1,400&family=Playfair+Display:wght@500&family=Poppins:wght@400;700&family=Work+Sans:wght@400;500;600;700;800&family=Zilla+Slab:ital,wght@1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+}
+
+/* navigation styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: 1.5em;
+    font-weight: 700;
+    padding-left: 120px;
+    padding-top: 80px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-right: 20px;
+}
+
+.nav-icon-one {
+    width: 24px;
+    height: 24px;
+}
+
+.nav-icon-two {
+    width: 36px;
+    height: 36px;
+}
+
+.nav-menubar {
+    padding-right: 120px;
+    padding-top: 80px;
+}
+
+/*  Header styles */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    color: #3A3A3A;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+
+.header-description {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.header-button {
+    color: #FFF;
+    padding: 10px 24px;
+    border-radius: 41px;
+    border: none;
+    background: #E02C6D;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.header-button:hover{
+    color: #E02C6D;
+    background: #917a7a41; 
+    transform: scale(1.5);
+}
+.header-text-container{
+    padding-left: 120px;
+}
+.header-img{
+    width: 100%;
+    margin-top: 80px;
+    margin-right: 170px;
+    background-image: url(../images/Circle-design.svg);
+    
+}
+
+/*  Responsive styles */
+
+/* small devices */
+
+@media screen and (max-width:576px) {
+    nav{
+        flex-direction: column;
+    }
+    .nav-title, .header-text-container{
+        padding: 20px 0px;
+    }
+    .nav-menubar{
+        padding: 0px;
+        margin: 0px;
+    }
+    .header-container{
+        flex-direction: column-reverse;
+    }
+    .header-img{
+        margin: 80px;
+    }
+
+}
